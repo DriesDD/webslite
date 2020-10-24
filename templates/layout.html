@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="../static/tailwind/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
+      </head>
+
+<body class="bg-gray-900">
+
+<div class="overviews grid grid-cols-4 gap-4 h-64 mt-4"> 
+    <div class="previous overview bg-gray-400" style>
+        Overview 1
+    </div>
+
+    <div class="current overview bg-gray-400 col-span-2" style>
+        Overview 2
+    </div>
+
+    <div class="next overview bg-gray-400" style>
+        Overview 3
+    </div>
+</div>
+
+    <div class="articles grid grid-cols-10 gap-4 h-64 -mt-48">
+        <div class="previous article bg-gray-200" style>
+            Article 1
+        </div>
+
+        <div class="current article bg-gray-200 col-span-8" style>
+            {{title}}
+        </div>
+
+        <div class="next article bg-gray-200" style>
+            Article 3
+        </div>
+    </div>
+
+</body>
+
+</html>
