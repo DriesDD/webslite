@@ -4,21 +4,13 @@ app = Flask(__name__)
 
 @app.route('/<page>')
 def blogs(page):
-    index = PAGES.index(page) + 1
-    return render_template('layout.html', title=PAGES[index][1])
-
-FILES = [
-    '/articles/website.html',
-    '/articles/else.html'
-]
-TITLES = [
-    'A website',
-    'Something else'
-]
+    pagedetails = next(i for i in PAGES if i[0] == page)
+    return render_template('layout.html', article = pagedetails[1], title=pagedetails[2])
 
 PAGES = [
-    'website',['/articles/website.html','A website'],
-
+    ['website','/articles/website.html','A website'],
+    ['about','/articles/about.html','About Dries Makes'],
+    ['poem','/articles/poem.html','A poem']
 ]
 
 app.run(debug=True) 
