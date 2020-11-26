@@ -28,15 +28,17 @@
 
     <div class="articles grid grid-cols-10 gap-4 h-64 -mt-48">
         <div class="previous article bg-gray-200" style>
-            Article 1
+            {{prevtitle}}
         </div>
 
         <div class="current article bg-gray-200 col-span-8" style>
             {{title}}
+            {% block content %}
+            {% endblock %}
         </div>
 
         <div class="next article bg-gray-200" style>
-            Article 3
+            {{nexttitle}}
         </div>
     </div>
 
