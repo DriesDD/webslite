@@ -4,6 +4,14 @@ module.exports = {
     content: ['../index.html']
   },
   theme: {
+    flex: {
+      '1': '1 1 12%',
+      '6': '6 1 76%',
+      auto: '1 1 auto',
+      initial: '0 1 auto',
+      inherit: 'inherit',
+      none: 'none',
+    },
     fontFamily: {
       display: ['Roboto', 'sans-serif'],
       body: ['Roboto', 'sans-serif'],
@@ -22,7 +30,11 @@ module.exports = {
       '6xl': '4rem',
       '7xl': '5rem',
     },
-    extend: {},
+    extend: {
+      transitionProperty: {
+        'gridTemplateColumns': 'span'
+      }
+    }
   },
   variants: {},
   plugins: [require('tailwindcss'),

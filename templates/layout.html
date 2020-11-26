@@ -8,38 +8,45 @@
         <link rel="stylesheet" href="../static/tailwind/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
           rel="stylesheet">
+        <script type="text/javascript" src="../static/scripts/slide.js" defer></script>
       </head>
 
 <body class="bg-gray-900">
 
 <div class="overviews grid grid-cols-4 gap-4 h-64 mt-4"> 
-    <div class="previous overview bg-gray-400" style>
+    <div class="previous overview bg-gray-400">
         Overview 1
     </div>
 
-    <div class="current overview bg-gray-400 col-span-2" style>
+    <div class="current overview bg-gray-400 col-span-2">
         Overview 2
     </div>
 
-    <div class="next overview bg-gray-400" style>
+    <div class="next overview bg-gray-400">
         Overview 3
     </div>
 </div>
 
-    <div class="articles grid grid-cols-10 gap-4 h-64 -mt-48">
-        <div class="previous article bg-gray-200" style>
-            {{prevtitle}}
-        </div>
+    <div class="articles grid grid-cols-8 gap-4 h-64 -mt-48">
 
-        <div class="current article bg-gray-200 col-span-8" style>
+        <a href="{{prevurl}}?fromprev" 
+        class="previous article bg-gray-200">
+            {{prevtitle}}
+        </a>
+
+        <div 
+        class="current article bg-gray-200 col-span-6">
             {{title}}
             {% block content %}
             {% endblock %}
         </div>
 
-        <div class="next article bg-gray-200" style>
+        <a href="{{nexturl}}?fromnext" 
+        class="next article bg-gray-200">
             {{nexttitle}}
-        </div>
+        </a>
+
+
     </div>
 
 </body>
