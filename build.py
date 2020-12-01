@@ -12,15 +12,15 @@ def article(page):
     nextdetails = PAGES[(PAGES.index(pagedetails) -1) % pagecount]
     prevdetails = PAGES[(PAGES.index(pagedetails) +1) % pagecount]
     return render_template(pagedetails[1],
-    article = pagedetails[1], title=pagedetails[2], 
-    nexttitle=nextdetails[2], nexturl=nextdetails[0],
-    prevtitle=prevdetails[2], prevurl=prevdetails[0])
+    article = pagedetails[1], title=pagedetails[2], color=pagedetails[3], 
+    nexttitle=nextdetails[2], nexturl=nextdetails[0],nextcolor=nextdetails[3],
+    prevtitle=prevdetails[2], prevurl=prevdetails[0],prevcolor=prevdetails[3],)
 
 #every page is listed here as [URL resource name, HTML file path, title]
 PAGES = [
-    ['website','/articles/website.html','A website',''],
-    ['about','/articles/about.html','About'],
-    ['poem','/articles/poem.html','A poem']
+    ['website','/articles/website.html','A website','red'],
+    ['about','/articles/about.html','About','blue'],
+    ['poem','/articles/poem.html','A poem','yellow']
 ]
 pagecount = len(PAGES)
 

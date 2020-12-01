@@ -13,8 +13,9 @@ module.exports = {
       none: 'none',
     },
     fontFamily: {
-      display: ['Roboto', 'sans-serif'],
+      display: ['Quicksand', 'sans-serif'],
       body: ['Roboto', 'sans-serif'],
+      mono: ['Space mono','monospace']
     },
     fontSize: {
       'xs': '.75rem',
@@ -28,7 +29,7 @@ module.exports = {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
-      '7xl': '5rem',
+      '12xl': '8rem',
     },
     extend: {
       transitionProperty: {

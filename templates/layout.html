@@ -1,49 +1,77 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{title}}</title>
-        <link rel="stylesheet" href="../static/tailwind/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-          rel="stylesheet">
-        <script type="text/javascript" src="../static/scripts/slide.js" defer></script>
-      </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="../static/tailwind/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <script type="text/javascript" src="../static/scripts/slide.js" defer></script>
+</head>
 
 <body class="bg-gray-900">
 
-<div class="overviews grid grid-cols-4 gap-4 h-64 mt-4"> 
-    <div class="previous overview bg-gray-400">
-        Overview 1
+    <div class="overviews grid grid-cols-10 sm:gap-4 sm:mx-4 h-14 sm:my-4">
+        <div class="col-span-2 text-2xl text-center font-display font-semibold p-2 text-red-400 bg-red-900">
+            dries.page
+        </div>
+
+        <div class="current overview invisible bg-gray-400">
+            Blank
+        </div>
+
+        <div class="current overview invisible ">
+        </div>
+
+        <div class="current overview invisible">
+            
+        </div>
+
+        <div class="current overview bg-gray-400">
+            Games
+        </div>
+
+        <div class="current overview bg-gray-400">
+            Writing
+        </div>
+
+        <div class="current overview bg-gray-400">
+            Arts
+        </div>
+
+        <div class="current overview bg-gray-400">
+            Web dev
+        </div>
+
+        <div class="next overview bg-gray-400">
+            About
+        </div>
     </div>
 
-    <div class="current overview bg-gray-400 col-span-2">
-        Overview 2
-    </div>
+    <div class="articles grid grid-cols-8 sm:gap-4 h-full">
 
-    <div class="next overview bg-gray-400">
-        Overview 3
-    </div>
-</div>
-
-    <div class="articles grid grid-cols-8 gap-4 h-64 -mt-48">
-
-        <a href="{{prevurl}}?fromprev" 
-        class="previous article bg-gray-200">
-            {{prevtitle}}
+        <a href="{{prevurl}}?fromprev" class="previous article bg-{{prevcolor}}-200 p-4">
+            <h3 class="text-center text-lg overflow-clip overflow-hidden">{{prevtitle}}</h2>
         </a>
 
-        <div 
-        class="current article bg-gray-200 col-span-6">
-            {{title}}
+        <div class="current article bg-{{color}}-50 col-span-6 p-4 min-h-screen h-full text-lg py-16 md:p-24 lg:px-48">
+            <h1 class="text-{{color}}-800 font-display font-semibold text-4xl sm:py-6 lg: py-10">{{title}}</h1>
             {% block content %}
             {% endblock %}
         </div>
 
-        <a href="{{nexturl}}?fromnext" 
-        class="next article bg-gray-200">
-            {{nexttitle}}
+        <a href="{{nexturl}}?fromnext"
+            class="relative next article bg-{{nextcolor}}-800 hover:bg-{{nextcolor}}-700 focus:bg-{{nextcolor}}-600 py-4">
+            <span class="absolute text-{{nextcolor}}-600 focus:text-{{nextcolor}}-500 text-12xl overflow-clip sm:align-middle -mx-10 -my-8">►</span>
+            <div class=" invisible md:visible bg-{{nextcolor}}-200 hover:bg-{{nextcolor}}-100 focus:bg-{{nextcolor}}-50 my-16 md:my-24"><h3
+                class="text-{{nextcolor}}-800 font-display font-medium text-4xl sm:my-6 lg: my-10 align-middle rotate-90 transform sm:rotate-0">
+                &nbspNext:&nbsp</br>&nbsp{{nexttitle}}&nbsp</h3></div>
         </a>
 
 

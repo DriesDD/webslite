@@ -535,7 +535,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Space mono, monospace;
 }
 
 /**
@@ -11240,11 +11240,15 @@ video {
 }
 
 .font-display {
-  font-family: Roboto, sans-serif;
+  font-family: Quicksand, sans-serif;
 }
 
 .font-body {
   font-family: Roboto, sans-serif;
+}
+
+.font-mono {
+  font-family: Space mono, monospace;
 }
 
 .font-thin {
@@ -11539,8 +11543,8 @@ video {
   font-size: 4rem;
 }
 
-.text-7xl {
-  font-size: 5rem;
+.text-12xl {
+  font-size: 8rem;
 }
 
 .leading-3 {
@@ -42812,11 +42816,15 @@ video {
   }
 
   .sm\:font-display {
-    font-family: Roboto, sans-serif;
+    font-family: Quicksand, sans-serif;
   }
 
   .sm\:font-body {
     font-family: Roboto, sans-serif;
+  }
+
+  .sm\:font-mono {
+    font-family: Space mono, monospace;
   }
 
   .sm\:font-thin {
@@ -43111,8 +43119,8 @@ video {
     font-size: 4rem;
   }
 
-  .sm\:text-7xl {
-    font-size: 5rem;
+  .sm\:text-12xl {
+    font-size: 8rem;
   }
 
   .sm\:leading-3 {
@@ -74306,11 +74314,15 @@ video {
   }
 
   .md\:font-display {
-    font-family: Roboto, sans-serif;
+    font-family: Quicksand, sans-serif;
   }
 
   .md\:font-body {
     font-family: Roboto, sans-serif;
+  }
+
+  .md\:font-mono {
+    font-family: Space mono, monospace;
   }
 
   .md\:font-thin {
@@ -74605,8 +74617,8 @@ video {
     font-size: 4rem;
   }
 
-  .md\:text-7xl {
-    font-size: 5rem;
+  .md\:text-12xl {
+    font-size: 8rem;
   }
 
   .md\:leading-3 {
@@ -105800,11 +105812,15 @@ video {
   }
 
   .lg\:font-display {
-    font-family: Roboto, sans-serif;
+    font-family: Quicksand, sans-serif;
   }
 
   .lg\:font-body {
     font-family: Roboto, sans-serif;
+  }
+
+  .lg\:font-mono {
+    font-family: Space mono, monospace;
   }
 
   .lg\:font-thin {
@@ -106099,8 +106115,8 @@ video {
     font-size: 4rem;
   }
 
-  .lg\:text-7xl {
-    font-size: 5rem;
+  .lg\:text-12xl {
+    font-size: 8rem;
   }
 
   .lg\:leading-3 {
@@ -137294,11 +137310,15 @@ video {
   }
 
   .xl\:font-display {
-    font-family: Roboto, sans-serif;
+    font-family: Quicksand, sans-serif;
   }
 
   .xl\:font-body {
     font-family: Roboto, sans-serif;
+  }
+
+  .xl\:font-mono {
+    font-family: Space mono, monospace;
   }
 
   .xl\:font-thin {
@@ -137593,8 +137613,8 @@ video {
     font-size: 4rem;
   }
 
-  .xl\:text-7xl {
-    font-size: 5rem;
+  .xl\:text-12xl {
+    font-size: 8rem;
   }
 
   .xl\:leading-3 {
@@ -168788,11 +168808,15 @@ video {
   }
 
   .\32xl\:font-display {
-    font-family: Roboto, sans-serif;
+    font-family: Quicksand, sans-serif;
   }
 
   .\32xl\:font-body {
     font-family: Roboto, sans-serif;
+  }
+
+  .\32xl\:font-mono {
+    font-family: Space mono, monospace;
   }
 
   .\32xl\:font-thin {
@@ -169087,8 +169111,8 @@ video {
     font-size: 4rem;
   }
 
-  .\32xl\:text-7xl {
-    font-size: 5rem;
+  .\32xl\:text-12xl {
+    font-size: 8rem;
   }
 
   .\32xl\:leading-3 {
